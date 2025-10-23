@@ -43,7 +43,7 @@ FROM dbo.Customers c JOIN dbo.Orders o ON c.CustomerID = o.CustomerID JOIN dbo.[
 GROUP BY c.City
 HAVING COUNT(DISTINCT od.productID) >= 2
 
---7. List all Customers who have ordered products, but have the ‘ship city’ on the order different from their own customer cities
+--7. List all Customers who have ordered products, but have the â€˜ship cityâ€™ on the order different from their own customer cities
 SELECT Distinct c.CustomerID, c.ContactName
 FROM dbo.Customers c JOIN dbo.Orders o ON c.CustomerID = o.CustomerID
 WHERE c.City != o.ShipCity
@@ -62,8 +62,7 @@ SELECT TOP 5
         GROUP BY o.ShipCity
         ORDER BY SUM(od2.Quantity) DESC
     ) as TopCustomerCity
-FROM Products p
-JOIN [Order Details] od ON p.ProductID = od.ProductID
+FROM Products p JOIN [Order Details] od ON p.ProductID = od.ProductID
 GROUP BY p.ProductID, p.ProductName
 ORDER BY SUM(od.Quantity) DESC;
 
@@ -108,3 +107,4 @@ JOIN (
 ) AS CustomerCities ON EmployeeCities.City = CustomerCities.City
 
 --11 we could do a self join
+
