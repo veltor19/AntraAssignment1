@@ -118,9 +118,10 @@ USE Northwind
 GO
 
 --14 List all Products that has been sold at least once in last 27 years.
-SELECT p.ProductID, p.ProductName, o.OrderDate
-FROM dbo.Products p JOIN dbo.[Order Details] od ON p.ProductID = od.ProductID JOIN dbo.Orders o ON od.OrderID = o.orderID
-WHERE o.OrderDate >= '1992-01-01'
+SELECT DISTINCT p.ProductID, p.ProductName
+FROM dbo.Products p
+JOIN dbo.[Order Details] od ON p.ProductID = od.ProductID JOIN dbo.Orders o ON od.OrderID = o.OrderID
+WHERE o.OrderDate >= DATEADD(YEAR, -27, GETDATE());
 
 --15 List top 5 locations (Zip Code) where the products sold most.
 SELECT TOP 5 o.ShipPostalCode, SUM(od.Quantity) total
@@ -132,7 +133,7 @@ ORDER BY total DESC
 --16 List top 5 locations (Zip Code) where the products sold most in last 27 years.
 SELECT TOP 5 o.ShipPostalCode, SUM(od.Quantity) total
 FROM dbo.[Order Details] od JOIN dbo.Orders o ON od.OrderID = o.OrderID
-WHERE o.ShipPostalCode IS NOT NULL AND o.OrderDate >= '1992-01-01' AND o.OrderDate <= '2019-12-31'
+WHERE o.ShipPostalCode IS NOT NULL AND o.OrderDate >= DATEADD(YEAR, -27, GETDATE());
 GROUP BY o.ShipPostalCode
 ORDER BY total DESC
 
@@ -211,4 +212,5 @@ UNION ALL
 
 SELECT city, CompanyName, ContactName, 'Supplier' AS Type
 FROM DBO.Suppliers
+
 ORDER BY City, Type, CompanyName
