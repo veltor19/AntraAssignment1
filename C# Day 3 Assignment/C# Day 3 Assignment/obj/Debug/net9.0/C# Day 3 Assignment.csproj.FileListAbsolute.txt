@@ -1,0 +1,14 @@
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.AssemblyInfoInputs.cache
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.AssemblyInfo.cs
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.csproj.CoreCompileInputs.cache
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\bin\Debug\net9.0\C# Day 3 Assignment.exe
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\bin\Debug\net9.0\C# Day 3 Assignment.deps.json
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\bin\Debug\net9.0\C# Day 3 Assignment.runtimeconfig.json
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\bin\Debug\net9.0\C# Day 3 Assignment.dll
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\bin\Debug\net9.0\C# Day 3 Assignment.pdb
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.dll
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\refint\C# Day 3 Assignment.dll
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.pdb
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\C# Day 3 Assignment.genruntimeconfig.cache
+C:\Users\pol\source\repos\C# Day 3 Assignment\C# Day 3 Assignment\obj\Debug\net9.0\ref\C# Day 3 Assignment.dll
