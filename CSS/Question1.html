@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li > a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        nav ul li > a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #2c3e50;
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        .dropdown li a {
+            padding: 12px 20px;
+            text-transform: none;
+            font-size: 13px;
+        }
+
+        .dropdown li a:hover {
+            background-color: #34495e;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .icon-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 3px 0 0 3px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-container button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #95a5a6;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 3px 3px 0;
+            font-size: 16px;
+        }
+
+        .search-container button:hover {
+            background-color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://antra.net">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 80'%3E%3Cpath fill='%2341b3e3' d='M20,60 L40,20 L60,60 L50,60 L40,40 L30,60 Z'/%3E%3Ctext x='80' y='55' font-family='Arial' font-size='40' fill='white' font-weight='300'%3EAntra%3C/text%3E%3C/svg%3E" alt="Antra Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="https://news.google.com/home?hl=en-US&gl=US&ceid=US:en">NEWS</a></li>
+                <li>
+                    <a href="#">ABOUT THE UNIVERSITY ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="https://umd.edu/about">About Us</a></li>
+                        <li><a href="https://umd.edu/about/mission">Mission & Vision</a></li>
+                        <li><a href="https://academiccatalog.umd.edu/graduate/faculty/">Faculty</a></li>
+                        <li><a href="https://maps.umd.edu/map/">Campus</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">TRAINING COURSES ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="https://bootcamp.ocpe.vcu.edu/software-engineering-lp?utm_source=Google&utm_medium=Search&utm_campaign=USA+VCU+Search+-+Courses+(SE)&campaignid=20009071136&adgroupid=149650564993&keyword=software%20development&device=c&utm_term=software%20development&utm_campaign=USA+UL+Search+Courses&utm_source=adwords&utm_medium=ppc&hsa_acc=4645158552&hsa_cam=20009071136&hsa_grp=149650564993&hsa_ad=657135789973&hsa_src=g&hsa_tgt=kwd-10542411&hsa_kw=software%20development&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=20009071136&gbraid=0AAAAADLoZO7gDMN4pzh28zOrWGi4NOl2W&gclid=CjwKCAiA2svIBhB-EiwARWDPjllnkRxohEyX70Tnet2U-h7imXRWAJzrXyJig1ipYdUOZowCkxhJgRoC7nIQAvD_BwE">Software Development</a></li>
+                        <li><a href="https://www.coursera.org/browse/data-science">Data Science</a></li>
+                        <li><a href="google.com/search?q=cloud+computing+class&rlz=1C1ONGR_enUS1043US1043&oq=cloud+computing+class&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDINCAMQABiDARixAxiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDIwMzZqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">Cloud Computing</a></li>
+                        <li><a href="https://advance.scps.virginia.edu/business-analytics/course?utm_feeditemid=&utm_device=c&utm_term=business%20analytics%20course&utm_source=google&utm_medium=ppc&utm_campaign=NBD_SE_Google_BAS_UVA_VA_Southeast&hsa_cam=22823801674&hsa_grp=187766447436&hsa_mt=e&hsa_src=g&hsa_ad=781234337989&hsa_acc=3984030648&hsa_net=adwords&hsa_kw=business%20analytics%20course&hsa_tgt=kwd-3390820275&hsa_ver=3&gad_source=1&gad_campaignid=22823801674&gbraid=0AAAAAC7RwU-BdRZQjv6euW2VIFZ_x8WMa&gclid=CjwKCAiA2svIBhB-EiwARWDPjr-2hVZrw4KnO1_TajnVL802KH0Dw4YRqzeTNDV8bNMyc06davEDLRoC7AkQAvD_BwE">Business Analysis</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.merriam-webster.com/dictionary/for%20company">FOR COMPANIES</a></li>
+                <li><a href="https://events.studentaffairs.virginia.edu/ohill-forum">FORUM</a></li>
+                <li><a href="https://antra.com/contact-us/">CONTACTS</a></li>
+            </ul>
+        </nav>
+
+        <div class="right-section">
+            <div class="icons">
+                <div class="icon-item">0 🔔</div>
+                <div class="icon-item">USER ▾</div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .footer-main {
+            background-color: #3a3f47;
+            color: #a8b0b8;
+            padding: 40px 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #a8b0b8;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #a8b0b8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+
+        .office-info p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 150px;
+            background-color: #2a2f35;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .map-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+
+        .footer-bottom {
+            background-color: #000;
+            color: #a8b0b8;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #a8b0b8;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        .fb-like-box {
+            background-color: #2a2f35;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 968px) {
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-section office-info">
+                <h3>Corporate Office:</h3>
+                <p>21355 Ridgetop Circle</p>
+                <p>Suite #300</p>
+                <p>Dulles, VA 20166</p>
+                <p>Ph: 703 994 4646</p>
+                <p>email: info@antra.net</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="https://www.jeffersontechnology.com/">Technology Services</a></li>
+                    <li><a href="https://www.goldmansachs.com/community-impact/10000-small-businesses/us?chl=ps&plt=go&cid=22906328066&agp=184774999860&kid=business%20advisors&mtype=e&gclid=CjwKCAiA2svIBhB-EiwARWDPjppOhTqpodDwmRl0xhnwlQ_O_oWJU6b-vW44VPHPCT9lmaZuNM3UYxoCd-EQAvD_BwE&gclsrc=aw.ds&gad_source=1&gad_campaignid=22906328066&gbraid=0AAAAAohRqU_fEsBIwCQQzB3YmEAAstZCi">Business Advisory Services</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Professional_services">Professional Services</a></li>
+                    <li><a href="https://wordpress.com/discover">Blog</a></li>
+                    <li><a href="https://www.mckinsey.com/about-us/overview">About Us</a></li>
+                    <li><a href="https://www.website.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://mitsloan.mit.edu/teaching-resources-library/case-studies">Case Studies</a></li>
+                    <li><a href="https://www.whitepages.com/">White Papers</a></li>
+                    <li><a href="https://resources.k12albemarle.org/">Technology Resources</a></li>
+                    <li><a href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-top-trends-in-tech">Top Technology Trends 2017</a></li>
+                    <li><a href="https://agiletransformation.com/">Agile Transformations</a></li>
+                    <li><a href="https://aws.amazon.com/mobile/mobile-application-development/">Web & Mobile Application Development</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Our Locations</h3>
+                <div class="map-container">
+                    <img src="#" alt="World Map">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2017 Antra, Inc. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+</body>
+</html>
